@@ -68,7 +68,7 @@ element.innerHTML = "Вопрос " + currentQuestionNumber + " из " + quiz.qu
 
 function showScores() {
 var gameOverHTML = "<h1>Результат</h1>";
-gameOverHTML += "<h2 id='score'> Ваш счет: " + quiz.score + "</h2>";
+gameOverHTML += "<h2 id='score'> Количество верных ответов: " + quiz.score + "</h2>";
 var element = document.getElementById("quiz");
 element.innerHTML = gameOverHTML;
 };
