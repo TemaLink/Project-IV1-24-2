@@ -1,85 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/level1easy.css">
-    <title>MusicTeacher</title>
-</head>
-
+    <title>Music teacher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <body>
-    
-    <h1 class="header-h1">Задание 3: Открытые струны</h1>
 
-    <div class="parent-container">
-        <div class="container" style="height: 777px">
-            <h3>Как вы уже знаете, существует всего 7 нот</h3>
-            <h3>В стандартном строе гитары далеко не такие ноты как вы думаете.</h3>
+
+    <style>
+        :root {
+            --dark-green: #1B5E20;
+            --medium-green: #2E7D32;
+            --light-green: #388E3C;
+            --cream: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: var(--cream);
+            line-height: 1.6;
+        }
+
+        nav {
+            background: var(--dark-green);
+            padding: 1.2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background: var(--light-green);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 7rem auto 2rem;
+            padding: 0 1.5rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(rgba(27, 94, 32, 0.9), rgba(56, 142, 60, 0.8)),
+                        url('guitar-bg.jpg') center/cover;
+            border-radius: 15px;
+            color: var(--cream);
+            margin-bottom: 3rem;
+        }
+
+        .hero-section h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid var(--light-green);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--dark-green);
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background: var(--medium-green);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            background: var(--light-green);
+            transform: scale(1.05);
+        }
+
+        .lesson-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            border-left: 4px solid var(--dark-green);
+        }
+
+        .difficulty {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .beginner { background: #C8E6C9; color: #1B5E20; }
+        .intermediate { background: #A5D6A7; color: #1B5E20; }
+        .advanced { background: #81C784; color: #1B5E20; }
+
+        .progress-bar {
+            height: 8px;
+            background: #E0E0E0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--light-green);
+            width: 65%;
+            transition: width 0.5s;
+        }
+
+        footer {
+            background: var(--dark-green);
+            color: var(--cream);
+            padding: 3rem 0;
+            margin-top: 5rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .lesson-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="lessons.html"><i class="fas fa-guitar"></i> Уроки</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="hero-section">
+            <h1>Задание 3: Открытые струны на гитаре</h1>
+        </section>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-music feature-icon"></i>
+                
+                <p>Как вы уже знаете, существует всего 7 нот. В стандартном строе гитары далеко не такие ноты как вы думаете. </p>
                 <div class="pictures1">
-                    <img src="static3/images/i.png" style="width: 400px; display: flex; position: relative; right: 15px; top: -8px;   border-radius: 12px; height: 150px; ">
+                    <img src="static3/images/i.png" style="border-radius: 12px;">
                     </img>
                 </div>
-
-            <h3>Изначально может показаться, что открытые струны имеют ту же последовательность, что и на нотном стане, то-есть До, Ре, Ми, Фа, Соль, Ля, Си</h3>
-            <h3>Однако, это далеко не так. Для начала стоит разобраться в нумерации струн. Первая струна - самая маленькая, а шестая - самая толстая.</h3>
-            <h3>Одной проблемой меньше. Теперь стоит разобраться, какие ноты звучат, при щипке открытой струны?</h3>
-            <h3>И так, мы будем считать от первой (маленькой) струны, до шестой (большой) струны. Это не так сложно запоминть, достаточно выучить последовательность: Ми, Си, Соль, Ре, Ля, Ми</h3>
-            <h3>То-есть, первая струна - Ми, вторая - Си, третья - Соль, четвертая - Ре, пятая - Ля, и шестая - Ми</h3>
-
-            <div class="pictt" >
-                <img src="static3/images/1.png" style="width: 90px; display:flex; position: relative; left: 70px; top: 30px; border-radius: 12px;">
-                <img src="static3/images/2.png"style="width: 90px; display:flex; position: relative; left: 220px; top: -60px; border-radius: 12px;" >
-                <img src="static3/images/3.png"style="width: 90px; display:flex; position: relative; left: 370px; top: -150px; border-radius: 12px;">
-                <img src="static3/images/4.png"style="width: 90px; display:flex; position: relative; left: 520px; top: -240px; border-radius: 12px;">
-                <img src="static3/images/5.png"style="width: 90px; display:flex; position: relative; left: 670px; top: -330px; border-radius: 12px;">
-                <img src="static3/images/6.png"style="width: 90px; display:flex; position: relative; left: 820px; top: -420px; border-radius: 12px;">
-            </div> 
-            <div class="text1">
-                <h3 style="display:flex; position: relative; left: 97px; top: -200px"  >Ми</h3>
-                <h3 style="display:flex; position: relative; left: 250px; top: -240px"  >Си</h3>
-                <h3 style="display:flex; position: relative; left: 390px; top: -280px"  >Соль</h3>
-                <h3 style="display:flex; position: relative; left: 560px; top: -320px"  >Ре</h3>
-                <h3 style="display:flex; position: relative; left: 700px; top: -360px"  >Ля</h3>
-                <h3 style="display:flex; position: relative; left: 850px; top: -400px"  >Ми</h3>
-            </div>    
-        </div>
-    </div>
-
-
-
-
-    <h1 class="header-h1">Перейдем к заданиям!</h1>
-    
-        
-    <div class="parent-container">
-        <div class="container">
-            <div class="text2">
-                <h3>материалы рекомендуется записывать , для лучшей продуктивности</h3>
+                <p>Изначально может показаться, что открытые струны имеют ту же последовательность, что и на нотном стане, то-есть До, Ре, Ми, Фа, Соль, Ля, Си. Однако, это далеко не так. Для начала стоит разобраться в нумерации струн. Первая струна - самая маленькая, а шестая - самая толстая. Одной проблемой меньше. Теперь стоит разобраться, какие ноты звучат, при щипке открытой струны? И так, мы будем считать от первой (маленькой) струны, до шестой (большой) струны. Это не так сложно запоминть, достаточно выучить последовательность: Ми, Си, Соль, Ре, Ля, Ми То-есть, первая струна - Ми, вторая - Си, третья - Соль, четвертая - Ре, пятая - Ля, и шестая - Ми</p>
                 <a href="static3/Vict.html" class="btn">Начать</a>
-            </div>  
+            </div>
         </div>
     </div>
-   
-    
-    
-                
 
 
-
-
-
-
-
-
-
-
-    <div class="footer-text">
-        <footer class="footer">
-            <p>&copy;Сайт был разработан учащимся группы ИВ1-24-2 Линкевичем Артемом Дмитриевичем в 2025 году в качестве проекта. Все права защищены</p>
-        </footer>
-   </div> 
-
+<div class="footer-text">
+    <footer class="footer">
+        <p>&copy;Сайт был разработан учащимся группы ИВ1-24-2 Линкевичем Артемом Дмитриевичем в 2025 году в качестве проекта. Все права защищены.</p>
+    </footer>
+</div> 
 
 
 
