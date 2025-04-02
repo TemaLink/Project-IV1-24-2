@@ -168,6 +168,15 @@
                 text-align: center;
             }
     
+            @media (max-width: 100000px) {
+                .responsive-img {
+                width: 100%; 
+                height: 50; 
+                }
+                .responsive-img {
+                width: 700px; 
+                }
+            }
             @media (max-width: 768px) {
                 nav ul {
                     gap: 1.5rem;
@@ -180,6 +189,14 @@
                 .lesson-card {
                     flex-direction: column;
                     align-items: flex-start;
+                }
+
+                .responsive-img {
+                width: 100%; 
+                height: 50; 
+                }
+                .responsive-img {
+                width: 100%; 
                 }
             }
         </style>
@@ -202,7 +219,7 @@
                     
                     <p>В настоящее время приняты следующие названия нот: До Ре Ми Фа Соль Ля Си. Другая распространённая система обозначения нот — буквенная: ноты от до до си обозначаются буквами латинского алфавита C, D, E, F, G, A, H.</p>
                     <div class="pictures1">
-                        <img src="static/images/CDE.png">
+                        <img src="static/images/CDE.png" class="responsive-img">
                         </img>
                     </div>
                     <p>Существует также и английская система обозначения (см. рисунок выше), в которой ноту си обозначают буквой B. В русских сборниках гитарных аккордов также нередко встречается английская система. Используются буквенные обозначения при настройке гитары тюнером, а так же для обозначения аккордов, например А - это аккорд "ля"</p>

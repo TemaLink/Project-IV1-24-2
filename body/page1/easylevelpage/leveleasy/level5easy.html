@@ -167,19 +167,36 @@
             text-align: center;
         }
 
-        @media (max-width: 768px) {
-            nav ul {
-                gap: 1.5rem;
+        @media (max-width: 100000px) {
+                .responsive-img {
+                width: 100%; 
+                height: 50; 
+                }
+                .responsive-img {
+                width: 700px; 
+                }
             }
-            
-            .hero-section h1 {
-                font-size: 2rem;
-            }
-            
-            .lesson-card {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            @media (max-width: 768px) {
+                nav ul {
+                    gap: 1.5rem;
+                }
+                
+                .hero-section h1 {
+                    font-size: 2rem;
+                }
+                
+                .lesson-card {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .responsive-img {
+                width: 100%; 
+                height: 50; 
+                }
+                .responsive-img {
+                width: 100%; 
+                }
         }
     </style>
 </head>
@@ -201,7 +218,7 @@
                 
                 <p>Здесь вы научитесь Находить ноту До первой октавы</p>
                 <div class="pictures1">
-                    <img src="static5/Images/1okt.png" style="border-radius: 12px; width: 700px;; ">
+                    <img src="static5/Images/1okt.png" style="border-radius: 12px;" class="responsive-img">
                     </img>
                 </div>
                 <p>Нота До в первой октаве расположена на шестой и пятой струнах гитары. Начнем мы с 6 струны. Нота до расположена там только на 8 ладу. Стоит помнить, что нота Си и До всегда расположены вместе, то есть смена звука происходит при смещении пальца, зажимающей струны на полутон. На 5 струне нота До расположена на 3 ладу.</p>

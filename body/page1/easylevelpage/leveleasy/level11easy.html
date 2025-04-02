@@ -167,7 +167,15 @@
                 margin-top: 5rem;
                 text-align: center;
             }
-    
+            @media (max-width: 100000px) {
+                .responsive-img {
+                width: 100%; 
+                height: 50; 
+                }
+                .responsive-img {
+                width: 700px; 
+                }
+            }
             @media (max-width: 768px) {
                 nav ul {
                     gap: 1.5rem;
@@ -181,7 +189,17 @@
                     flex-direction: column;
                     align-items: flex-start;
                 }
+
+                .responsive-img {
+                width: 100%; 
+                height: 50; 
+                }
+                .responsive-img {
+                width: 100%; 
+                }
             }
+            
+        
         </style>
     </head>
     <body>
@@ -202,7 +220,7 @@
                     
                     <p>В данном разделе вы научитесь находить ноту Си первой октавы на грифе гитары</p>
                     <div class="pictures1">
-                        <img src="static7/images/1okt.png" style="border-radius: 12px; width: 700px;">
+                        <img src="static7/images/1okt.png" style="border-radius: 12px;" class="responsive-img">
                         </img>
                     </div>
                     <p>Нота Си в первой октаве располагается на 19 ладу 6 струны, 14 ладу 5 струны, 9 ладу 4 струны, 4 ладу 3 струны и на открытой 2 струне</p>
