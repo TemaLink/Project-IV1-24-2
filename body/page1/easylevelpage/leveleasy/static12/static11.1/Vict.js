@@ -3,7 +3,7 @@ const questions = [
         question: "На каком ладу 6-й струны находится нота До второй октавы?",
         optionA: "12",
         optionB: "13",
-        optionC: "15",
+        optionC: "20",
         optionD: "17",
         correctOption: "optionC"
     },
@@ -12,7 +12,7 @@ const questions = [
         question: "Где на 5-й струне можно сыграть До второй октавы?",
         optionA: "8 лад",
         optionB: "9 лад",
-        optionC: "10 лад",
+        optionC: "15 лад",
         optionD: "12 лад",
         correctOption: "optionC"
     },
@@ -21,25 +21,25 @@ const questions = [
         question: "На каком ладу 4-й струны расположена нота До второй октавы?",
         optionA: "3",
         optionB: "4",
-        optionC: "5",
+        optionC: "10",
         optionD: "7",
         correctOption: "optionC"
     },
 
     {
         question: "Какой лад 3-й струны соответствует ноте До второй октавы?",
-        optionA: "0",
+        optionA: "4",
         optionB: "2",
-        optionC: "1",
+        optionC: "5",
         optionD: "3",
         correctOption: "optionC"
     },
 
     {
-        question: "До второй октавы на 6-й струне на каком ладу?",
+        question: "Нота До второй октавы на 6-й струне на каком ладу?",
         optionA: "12",
         optionB: "14",
-        optionC: "15",
+        optionC: "20",
         optionD: "16",
         correctOption: "optionC"
     },
@@ -48,17 +48,17 @@ const questions = [
         question: "Найдите верное расположение ноты До для 5-й струны:",
         optionA: "7 лад",
         optionB: "9 лад",
-        optionC: "10 лад",
+        optionC: "15 лад",
         optionD: "11 лад",
         correctOption: "optionC"
     },
 
     {
         question: "Где НЕ распологается нота До второй октавы?",
-        optionA: "3 струна 1 лад",
-        optionB: "4 струна 5 лад",
-        optionC: "5 струна 12 лад",
-        optionD: "6 струна 15 лад",
+        optionA: "3 струна 5 лад",
+        optionB: "4 струна 10 лад",
+        optionC: "5 струна 16 лад",
+        optionD: "6 струна 20 лад",
         correctOption: "optionC"
     },
 
@@ -66,7 +66,7 @@ const questions = [
         question: "На какой струне нота До второй октавы находится на 5-м ладу?",
         optionA: "5-я струна",
         optionB: "2-я струна",
-        optionC: "4-я струна",
+        optionC: "3-я струна",
         optionD: "6-я струна",
         correctOption: "optionC"
     },
@@ -81,7 +81,7 @@ const questions = [
     },
 
     {
-        question: "Нота До второй октавы на 1-м ладу расположена на какой струне?",
+        question: "Нота До второй октавы на 5-м ладу расположена на какой струне?",
         optionA: "2-я",
         optionB: "4-я",
         optionC: "3-я",
