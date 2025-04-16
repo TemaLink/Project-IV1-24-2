@@ -71,13 +71,7 @@ body  {
   }
   
   
-  .container {
-   background-color: rgba(80, 183, 197, 0.644);
-   border-radius: 12px;
-   width: 1000px;
-   align-items: center;
-   justify-content: center;
-  }
+
   
   
   .child-container {
@@ -115,18 +109,8 @@ body  {
 	float: center;  
 	margin-right: 0px;
   }
-  
-  .pictures1 {
-	width: 370px;
-  height: 125px;
-	position:relative;
-  margin-left: 300px;
-  border-radius: 10px;
-  border: 5px rgba(80, 183, 197, 0.644) solid;
-  box-shadow: 0 0 20px #444;
 
-  }
-  
+
   .info {
     font-size: 30px;
     font-weight: 600;
@@ -136,7 +120,6 @@ body  {
 
   .parent-container1 {
     display: flex;
-
   }
    
   
@@ -205,24 +188,114 @@ body  {
 
   .imgboard3 {
     border: 5px #ccc solid;
-    width: 150px;
+    width: 100px;
     border-radius: 10px;
     margin-right: 500px;
-    height: 150px;
+    height: 100px;
     box-shadow: 0 0 20px #444; 
   }
 
   .text1 {
-    margin-top: -200px;
+    margin-top: 0px;
   }
 
   .pct1 {
-  margin-top: -220px;
+  border-width: 100px;
   display: flex;
-  margin-left: 735px;
-  width: 383px;
   border-radius: 12px;
   border: 6px rgba(80, 183, 197, 0.644) solid;
   box-shadow: 0 0 20px #444;
   }
 
+  .imagev1 {
+    display: flex;
+    border-color: #0e869b;
+    border-radius: 12px;
+    border: 6px rgba(80, 183, 197, 0.644) solid;
+    box-shadow: 0 0 20px #444;
+    margin-top: 200px;
+    height: 150px;
+    width: 100px;
+  }
+
+    .grid {
+    width: 68%;
+    height: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #cbcbcb;
+    }
+    
+    .buttons img
+    {
+    width:200px;
+    }
+    .grid h1 {
+    font-family: "sans-serif";
+    background-color: #a5a197;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    border-radius: 50px;
+    }
+    hr
+    {
+    margin-top: 50px;
+        color: red;
+        background-color: #86847e;
+        height: 2px;
+        border: none;
+    }
+    #score {
+    color: #a5a197;
+    text-align: center;
+    font-size: 30px;
+    }
+    
+    .grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+    color: #a5a197;
+    }
+    
+    .buttons {
+    margin-top: 30px;
+    }
+    
+    #btn0,
+    #btn1,
+    #btn2,
+    #btn3 {
+    
+        padding: 0px;
+    font-size: 20px;
+    color: #fff;
+        border: none;
+    margin: 10px 20px 10px 0px;
+    
+    }
+    
+    #btn0:hover,
+    #btn1:hover,
+    #btn2:hover,
+    #btn3:hover {
+    cursor: pointer;
+    background-color: #a5a197;
+    }
+    
+    #btn0:focus,
+    #btn1:focus,
+    #btn2:focus,
+    #btn3:focus {
+    outline: 0;
+    }
+    
+    #progress {
+    color: #2b2b2b;
+    font-size: 18px;
+    }
+    
