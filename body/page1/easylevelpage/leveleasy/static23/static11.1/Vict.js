@@ -16,51 +16,51 @@ const questions = [
         correctOption: "optionB"
     },
     {
-        question: "Какая нота на 2 струне 20 ладу?",
-        optionA: "Фа",
-        optionB: "Соль",
-        optionC: "Ля",
-        optionD: "Си",
-        correctOption: "optionB"
-    },
-    {
-        question: "Сколько позиций у ноты Соль третьей октавы?",
-        optionA: "1",
-        optionB: "2",
-        optionC: "3",
-        optionD: "4",
-        correctOption: "optionB"
-    },
-    {
-        question: "На каком ладу 1 струны НЕТ ноты Соль третьей октавы?",
-        optionA: "15",
-        optionB: "17",
-        optionC: "20",
-        optionD: "Все есть",
-        correctOption: "optionB"
-    },
-    {
-        question: "Где находится Соль третьей октавы на 1 струне?",
-        optionA: "15 лад",
-        optionB: "17 лад",
-        optionC: "19 лад",
-        optionD: "20 лад",
+        question: "Где находится нота Ля третьей октавы?",
+        optionA: "1 струна 17 лад",
+        optionB: "2 струна 15 лад",
+        optionC: "3 струна 19 лад",
+        optionD: "1 струна 19 лад",
         correctOption: "optionA"
     },
     {
-        question: "На какой струне Соль третьей октавы есть на 20 ладу?",
-        optionA: "1 струна",
-        optionB: "2 струна",
-        optionC: "3 струна",
-        optionD: "4 струна",
+        question: "На каком ладу 1 струны есть нота Ля?",
+        optionA: "15",
+        optionB: "17",
+        optionC: "19",
+        optionD: "20",
         correctOption: "optionB"
     },
     {
-        question: "Какая нота на 2 струне 20 ладу?",
-        optionA: "Фа",
-        optionB: "Соль",
-        optionC: "Ля",
-        optionD: "Си",
+        question: "Какая нота на 1 струне 17 ладу?",
+        optionA: "Соль",
+        optionB: "Ля",
+        optionC: "Си",
+        optionD: "До",
+        correctOption: "optionB"
+    },
+    {
+        question: "Где находится нота Си третьей октавы?",
+        optionA: "1 струна 19 лад",
+        optionB: "1 струна 17 лад",
+        optionC: "2 струна 20 лад",
+        optionD: "3 струна 19 лад",
+        correctOption: "optionA"
+    },
+    {
+        question: "На каком ладу 1 струны есть нота Си третьей октавы?",
+        optionA: "17",
+        optionB: "19",
+        optionC: "20",
+        optionD: "15",
+        correctOption: "optionB"
+    },
+    {
+        question: "Какая нота расположена на 1 струне 19 ладу?",
+        optionA: "Ля",
+        optionB: "Си",
+        optionC: "До",
+        optionD: "Ре",
         correctOption: "optionB"
     },
     {
@@ -72,12 +72,12 @@ const questions = [
         correctOption: "optionB"
     },
     {
-        question: "На каком ладу 1 струны НЕТ ноты Соль третьей октавы?",
-        optionA: "15",
-        optionB: "17",
-        optionC: "20",
-        optionD: "Все есть",
-        correctOption: "optionB"
+        question: "На какой струне есть нота Ля третьей октавы?",
+        optionA: "1",
+        optionB: "2",
+        optionC: "3",
+        optionD: "4",
+        correctOption: "optionA"
     },
 
 ]
