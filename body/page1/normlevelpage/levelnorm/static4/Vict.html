@@ -424,7 +424,7 @@ input[type=radio]:checked ~ .option {
 @media(min-width : 350px) and (max-width : 700px){
    .game-quiz-container{
        width: 90%;
-       height: 100vh;
+       height: 110vh;
     }
     .game-details-container h1{
         font-size: 1rem;
@@ -447,9 +447,6 @@ input[type=radio]:checked ~ .option {
     }
     .modal-content-container h1{
         font-size: 1.2rem;
-    }
-    .note-image {
-        max-width: 80%;
     }
 }
 
@@ -511,7 +508,7 @@ input[type=radio]:checked ~ .option {
                     <h1> Вопрос : <span id="question-number"></span> / 10</h1>
                 </div>
                 <div class="game-details-container">
-                    <h1>Какая нота на картинке? (малая октава)</h1>
+                    <h1>Какая нота на картинке? (третья октава)</h1>
                 </div>
     
                 <div class="game-question-container">
@@ -569,45 +566,26 @@ input[type=radio]:checked ~ .option {
         <script>
 const questions = [
     {
-        image: "https://temalink.github.io/images/1/MF.png",
+        image: "https://temalink.github.io/images/1/3C.png",
         question: "",
-        optionA: "Фа",
+        optionA: "До",
         optionB: "Си",
         optionC: "Ля",
         optionD: "Ре",
         correctOption: "optionA"
     },
     {
-        image: "https://temalink.github.io/images/1/MA.png",
+        image: "https://temalink.github.io/images/1/3D.png",
         question: "",
         optionA: "Фа",
         optionB: "Си",
-        optionC: "Ля",
+        optionC: "Ре",
         optionD: "Ми",
         correctOption: "optionC"
     },
 
     {
-        image: "https://temalink.github.io/images/1/MG.png",
-        question: "",
-        optionA: "Соль",
-        optionB: "Си",
-        optionC: "Ля",
-        optionD: "Ре",
-        correctOption: "optionA"
-    },
-    {
-        image: "https://temalink.github.io/images/1/MB.png",
-        question: "",
-        optionA: "Фа",
-        optionB: "Ре",
-        optionC: "Си",
-        optionD: "Ми",
-        correctOption: "optionC"
-    },
-
-    {
-        image: "https://temalink.github.io/images/1/ME.png",
+        image: "https://temalink.github.io/images/1/3E.png",
         question: "",
         optionA: "Ми",
         optionB: "Си",
@@ -616,52 +594,71 @@ const questions = [
         correctOption: "optionA"
     },
     {
-        image: "https://temalink.github.io/images/1/MA.png",
+        image: "https://temalink.github.io/images/1/3F.png",
         question: "",
         optionA: "Фа",
-        optionB: "Си",
-        optionC: "Ля",
+        optionB: "Ре",
+        optionC: "Си",
         optionD: "Ми",
-        correctOption: "optionC"
+        correctOption: "optionA"
     },
 
     {
-        image: "https://temalink.github.io/images/1/MG.png",
+        image: "https://temalink.github.io/images/1/3G.png",
         question: "",
-        optionA: "Фа",
+        optionA: "Соль",
         optionB: "Си",
         optionC: "Ля",
         optionD: "Ре",
         correctOption: "optionA"
     },
     {
-        image: "https://temalink.github.io/images/1/ME.png",
+        image: "https://temalink.github.io/images/1/3A.png",
+        question: "",
+        optionA: "Фа",
+        optionB: "Си",
+        optionC: "Ля",
+        optionD: "Ми",
+        correctOption: "optionC"
+    },
+
+    {
+        image: "https://temalink.github.io/images/1/3B.png",
+        question: "",
+        optionA: "Фа",
+        optionB: "Си",
+        optionC: "Ля",
+        optionD: "Ре",
+        correctOption: "optionB"
+    },
+    {
+        image: "https://temalink.github.io/images/1/3C.png",
         question: "",
         optionA: "Фа",
         optionB: "Си",
         optionC: "Ре",
-        optionD: "Ми",
+        optionD: "До",
         correctOption: "optionD"
     },
 
 
     {
-        image: "https://temalink.github.io/images/1/MA.png",
+        image: "https://temalink.github.io/images/1/3D.png",
         question: "",
         optionA: "До",
         optionB: "Си",
         optionC: "Ля",
         optionD: "Ре",
-        correctOption: "optionC"
+        correctOption: "optionD"
     },
     {
-        image: "https://temalink.github.io/images/1/MG.png",
+        image: "https://temalink.github.io/images/1/3E.png",
         question: "",
         optionA: "Фа",
         optionB: "Си",
         optionC: "Соль",
         optionD: "Ми",
-        correctOption: "optionC"
+        correctOption: "optionD"
     },
 
 ]
